@@ -26,10 +26,13 @@ body a {
 
 header {
   background-color: beige;
+  height: 310px;
+  margin-top: -10px;
 }
 header #nav-bar {
   display: flex;
   width: 100%;
+  height: 10%;
 }
 header .name-image {
   width: 20%;
@@ -46,8 +49,15 @@ header div p {
 header .links {
   display: flex;
   width: 40%;
+  height: 20%;
+  border: solid 1px red;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+header .links a {
+  font-size: 20px;
 }
 
 main #about-me {
@@ -65,6 +75,7 @@ h1 {
 #sociale-media {
   display: flex;
   width: 20%;
-  height: 80%;
-  margin-left: -70px;
+  margin-top: -100;
+  margin-left: -150px;
+  justify-content: center;
 }
