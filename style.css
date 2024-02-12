@@ -79,4 +79,61 @@ h1 {
   margin-top: -100;
   margin-left: -150px;
   justify-content: center;
+}
+
+#know-me {
+  display: flex;
+  border: solid 1px red;
+  justify-content: space-around;
+}
+
+.text-know-me {
+  display: flex;
+  border: solide 1px green;
+  flex-direction: column;
+  width: 50%;
+}
+
+.skills {
+  display: flex;
+  width: 20%;
+  border: solid 1px black;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skills li {
+  display: flex;
+  background-color: grey;
+  text-align: center;
+  width: 70px;
+}
+
+input {
+  width: 150px;
+  height: 50px;
+  background-color: blue;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+footer input {
+  width: 250px;
+  height: 25px;
+  background-color: white;
+}
+
+textarea {
+  width: 250px;
+  height: 300px;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background-color: green;
 }/*# sourceMappingURL=style.css.map */
