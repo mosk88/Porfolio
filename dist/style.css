@@ -48,16 +48,12 @@ header div p {
 }
 header .links {
   display: flex;
-  width: 40%;
+  width: 50%;
   height: 20%;
-  border: solid 1px red;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-header .links a {
-  font-size: 20px;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-right: 60px;
 }
 
 main #about-me {
@@ -76,7 +72,7 @@ h1 {
   display: flex;
   width: 20%;
   margin-top: -100;
-  margin-left: -150px;
+  margin-left: -100px;
   justify-content: center;
 }
 
@@ -88,7 +84,6 @@ h1 {
 
 .text-know-me {
   display: flex;
-  border: solide 1px green;
   flex-direction: column;
   width: 50%;
 }
@@ -96,7 +91,6 @@ h1 {
 .skills {
   display: flex;
   width: 20%;
-  border: solid 1px black;
   justify-content: center;
   flex-direction: column;
 }
@@ -111,7 +105,7 @@ h1 {
 input {
   width: 150px;
   height: 50px;
-  background-color: blue;
+  background-color: green;
 }
 
 .footer {
@@ -127,7 +121,7 @@ footer input {
 }
 
 textarea {
-  width: 250px;
+  width: 400px;
   height: 300px;
 }
 
