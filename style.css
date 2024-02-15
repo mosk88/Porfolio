@@ -2,12 +2,14 @@
 body {
   background-color: rgb(199, 199, 55);
 }
-body img {
+body .img {
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 10px;
+  display: flex;
+  justify-items: end;
+  z-index: 4;
 }
 body h1 {
   color: black;
@@ -27,38 +29,68 @@ body a {
   /*specifique/  */
 }
 
-header {
-  background-color: beige;
-  height: 150px;
-  margin-top: -10px;
-}
-header #nav-bar {
-  display: flex;
-  width: 100%;
-}
-header .name-image {
-  width: 20%;
+.navbar {
+  background-color: #333;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-right: 300px;
-  margin-top: 10px;
-  align-self: flex-start;
-}
-header div p {
-  color: black;
-}
-header .links {
-  display: flex;
-  width: 50%;
-  height: 20%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 60px;
-  margin-right: 60px;
+  align-items: center;
 }
 
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-list li {
+  margin-right: 20px;
+}
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.content {
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+  .show {
+    display: flex;
+  }
+  li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
 main #about-me {
   display: flex;
   border: solid 1px white;
@@ -116,19 +148,12 @@ h1 {
   text-align: center;
 }
 
-input {
-  width: 150px;
-  height: 50px;
-  background-color: green;
-}
-
-.footer {
+.form {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  margin-left: 500px;
-  width: 20%;
 }
-.footer input {
+.form input {
   width: 250px;
   height: 25px;
   background-color: white;
@@ -143,7 +168,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 120px;
   width: 150px;
   height: 50px;
   background-color: green;

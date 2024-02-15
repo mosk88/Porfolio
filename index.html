@@ -8,22 +8,26 @@
   </head>
   <body>
     <header>
-      <section id="nav-bar">
-        <ul class="name-image">
-          <li>
-            <img src="./image/IMG_9065m-1.webp" alt="My image mostafa titah" />
-          </li>
-          <div>
-            <li><p>MOSTAFA TITAH</p></li>
-          </div>
+      <div class="navbar">
+        <img class="img" src="./image/IMG_9065m-1.webp" alt="" />
+        <div class="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-list" id="navList">
+          <li><a href="#">Home</a></li>
+          <li><a href="./aboutme.html">About me</a></li>
+          <li><a href="./Projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
-        <ul class="links">
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./Aboutme.html">ABOUT</a></li>
-          <li><a href="./Projects.html">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </section>
+      </div>
+
+      <div class="content">
+        <!-- Le contenu de votre page va ici -->
+        <h1>Bienvenue sur notre site</h1>
+        <p>C'est une page de démonstration.</p>
+      </div>
     </header>
     <main>
       <section id="about-me">
@@ -76,38 +80,15 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <form action="https://formspree.io/f/xleqbevp" method="POST">
-        <h2>CONTACT</h2>
-        <label for="inputNom" id="labellastname">Last name</label>
-        <input
-          type="nom"
-          name="nom"
-          id="inputNom"
-          placeholder="Saisissez votre nom de famille"
-          required
-        />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var burgerMenu = document.querySelector(".burger-menu");
+        var navList = document.getElementById("navList");
 
-        <label for="inputPrenom" id="labelfirestname">Firest name</label>
-        <input
-          type="prenom"
-          name="prenom"
-          id="inputPrenom"
-          placeholder="Saisissez votre prénom"
-          required
-        />
-        <label> Your email:</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="exemple@gmail.com"
-          required
-        />
-
-        <label> Your message: <textarea name="message"></textarea></label>
-        <!-- your other form fields go here -->
-        <button class="button" type="submit">Submit</button>
-      </form>
-    </footer>
+        burgerMenu.addEventListener("click", function () {
+          navList.classList.toggle("show");
+        });
+      });
+    </script>
   </body>
 </html>

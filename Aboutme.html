@@ -6,6 +6,28 @@
     <title>About me</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <header>
+    <div class="navbar">
+      <img class="img" src="./image/IMG_9065m-1.webp" alt="" />
+      <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-list" id="navList">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./aboutme.html">About me</a></li>
+        <li><a href="./Projects.html">Projects</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <!-- Le contenu de votre page va ici -->
+      <h1>Bienvenue sur notre site</h1>
+      <p>C'est une page de démonstration.</p>
+    </div>
+  </header>
   <body>
     <main>
       <section id="about-me">
@@ -65,5 +87,15 @@
         </section>
       </section>
     </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var burgerMenu = document.querySelector(".burger-menu");
+        var navList = document.getElementById("navList");
+
+        burgerMenu.addEventListener("click", function () {
+          navList.classList.toggle("show");
+        });
+      });
+    </script>
   </body>
 </html>
