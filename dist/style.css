@@ -88,18 +88,23 @@ h1 {
   width: 50%;
 }
 
-.skills {
+.my-skill {
   display: flex;
-  width: 20%;
-  justify-content: center;
   flex-direction: column;
 }
 
-.skills li {
+.skills {
   display: flex;
-  background-color: grey;
+  width: 20%;
+  height: 20%;
+  flex-wrap: wrap;
+}
+.skills li {
+  background-color: beige;
+  border: solid 1px black;
+  border-radius: 20%;
+  width: 150%;
   text-align: center;
-  width: 70px;
 }
 
 input {

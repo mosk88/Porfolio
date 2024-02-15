@@ -3,21 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css" />
+    <title>Portfolio TITAH MOSTAFA</title>
+    <link rel="stylesheet" href="/Porfolio/style.css" />
   </head>
   <body>
     <header>
       <section id="nav-bar">
         <ul class="name-image">
-          <li><img src="/image/IMG_9065m-1.webp" alt="My image" /></li>
+          <li>
+            <img
+              src="/Porfolio/image/IMG_9065m-1.webp"
+              alt="My image mostafa titah"
+            />
+          </li>
           <div>
             <li><p>MOSTAFA TITAH</p></li>
           </div>
         </ul>
         <ul class="links">
           <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
+          <li><a href="">ABOUT</a></li>
           <li><a href="#">PROJECTS</a></li>
           <li><a href="#">CONTACT</a></li>
         </ul>
@@ -25,7 +30,7 @@
     </header>
     <main>
       <section id="about-me">
-        <h1>HEY? I'AM MOSTAFA TITAH</h1>
+        <h1>HEY? I'M MOSTAFA TITAH</h1>
         <p>
           A Fronted focused Web Developer building the Frontend of Websites and
           Web Applications that leads to the success of the overall product
@@ -40,7 +45,7 @@
             <a href=""></a>
           </li>
           <li>
-            <a href=""
+            <a href="https://www.linkedin.com/in/titahelmostafa"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -56,7 +61,7 @@
             </a>
           </li>
           <li>
-            <a href=""
+            <a href="https://github.com/mosk88"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -83,7 +88,7 @@
         <div class="text-know-me">
           <h2>Get to Know me!</h2>
           <p>
-            i'm a fullstuck Web Developer building the Front and Back-end of
+            I'm a fullstuck Web Developer building the Front and Back-end of
             Websites and Web Applications that leads to the success of the
             overall product. Check out some of my work in the projects section.
           </p>
@@ -102,16 +107,15 @@
           </p>
           <input type="button" value="CONTACT" />
         </div>
-
+        <h2>My Skills</h2>
         <dev class="skills">
-          <h2>My Skills</h2>
           <ul>
             <li>HTML</li>
           </ul>
           <ul>
             <li>CSS</li>
           </ul>
-          <br />
+
           <ul>
             <li>JavaScript</li>
           </ul>
@@ -120,6 +124,9 @@
           </ul>
           <ul>
             <li>Github</li>
+          </ul>
+          <ul>
+            <li>Bootstrap</li>
           </ul>
         </dev>
       </section>
@@ -138,6 +145,23 @@
         method="POST"
       >
         <h2>CONTACT</h2>
+        <label for="inputNom" id="labellastname">Last name</label>
+        <input
+          type="nom"
+          name="nom"
+          id="inputNom"
+          placeholder="Saisissez votre nom de famille"
+          required
+        />
+
+        <label for="inputPrenom" id="labelfirestname">Firest name</label>
+        <input
+          type="prenom"
+          name="prenom"
+          id="inputPrenom"
+          placeholder="Saisissez votre prénom"
+          required
+        />
         <label> Your email:</label>
         <input
           type="email"
