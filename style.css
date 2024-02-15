@@ -10,10 +10,11 @@ body img {
   margin-left: 10px;
 }
 body h1 {
-  color: white;
+  color: black;
 }
 body p {
   color: white;
+  text-align: center;
 }
 body ul {
   list-style: none;
@@ -60,9 +61,15 @@ header .links {
 
 main #about-me {
   display: flex;
-  width: 50%;
+  border: solid 1px white;
   flex-direction: column;
-  margin-left: 25%;
+  text-align: center;
+}
+main #my-project {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  margin-top: 200px;
 }
 
 h1 {
@@ -118,10 +125,10 @@ input {
 .footer {
   display: flex;
   flex-direction: column;
+  margin-left: 500px;
   width: 20%;
 }
-
-footer input {
+.footer input {
   width: 250px;
   height: 25px;
   background-color: white;
@@ -132,7 +139,11 @@ textarea {
   height: 300px;
 }
 
-button {
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 120px;
   width: 150px;
   height: 50px;
   background-color: green;
